@@ -1,0 +1,19 @@
+
+# codechef
+# Candies
+
+x=int(input())
+l=[]
+for i in range(x):
+    y=int(input())
+    lst=list(map(int,input().split()))
+    s=set(lst)
+    for j in s:
+        if lst.count(j)>=3:
+            l.append("no")
+            break
+    else:
+        l.append("yes")
+for i in l:
+    print(i)
+        
